@@ -1,0 +1,169 @@
+:root {
+  --primary-color: rgb(245, 245, 245);
+  --secondary-color: rgb(240, 240, 240);
+  --font-size: 1.5rem;
+  --primary-font-color: rgb(68, 67, 67);
+  --secondary-font-color: rgb(109, 109, 109);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  padding: 2.5rem 3rem;
+}
+
+.nav-bar__list > li {
+  display: inline;
+  padding: 0.8rem 1.5rem;
+}
+
+.nav-bar__list_4 {
+  background-color: rgba(62, 128, 233, 0.979);
+  color: var(--primary-color);
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 14rem 50rem;
+  color: var(--primary-font-color);
+}
+
+.google-logo {
+  width: 100%;
+  display: inherit;
+  justify-content: center;
+}
+
+.google-logo__imagen {
+  width: 270px;
+}
+
+.search-bar {
+  display: inherit;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.search {
+  display: inherit;
+  justify-content: center;
+  width: 100vh;
+}
+
+.search__input {
+  width: 70vh;
+  border: 0.1rem solid rgb(209, 209, 209);
+  border-radius: 2rem;
+  padding: 1.4rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.botones__container-left,
+.botones__container-right {
+  display: flex;
+  width: 50%;
+}
+
+.botones__container-left {
+  justify-content: flex-end;
+  padding-right: 1.8rem;
+}
+
+.botones__container-right {
+  justify-content: flex-start;
+  padding-left: 1.8rem;
+}
+
+.boton_enviar__search,
+.boton_enviar__luck {
+  width: fit-content;
+  font-size: var(--font-size);
+  padding: 0.8rem 1.1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+input.boton_enviar__luck:hover,
+input.boton_enviar__search:hover {
+  border: 0.01rem rgb(206, 206, 206) solid;
+  border-radius: 0.2rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--secondary-color);
+  border-top: 1px solid rgb(212, 212, 212);
+  font-size: 1.4rem;
+  color: var(--secondary-font-color);
+  margin-top: 17rem; /* falta arreglar esto */
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-izquierda,
+.footer-derecha {
+  display: inherit;
+  width: 50%;
+}
+
+.footer-izquierda {
+  justify-content: flex-start;
+}
+
+.footer-derecha {
+  justify-content: flex-end;
+}
+
+.footer-derecha__lista,
+.footer-izquierda__lista {
+  display: block;
+  padding-left: 1.5rem;
+}
+
+footer li {
+  padding: 1.2rem 1.2rem;
+  display: inline-block;
+}
+
+a {
+  color: var(--secondary-font-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
